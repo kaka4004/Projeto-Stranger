@@ -12,22 +12,52 @@
 body {
   background-color: #0b0101;
   color: rgba(255, 255, 255, 0.9);
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 button{
     font-family: "Poppins", sans-serif;
     cursor: pointer;
 }
+button{
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        display: flex;
+        gap: 12px;
+        border: none;
+        outline: none;
+        padding: 16px 0px;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+    }
 
 
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 4vw;
+  flex-direction: column;
+  padding: 1vw 4vw ;
+  gap: 39px;
   position: absolute;
   z-index: 9;
+  font-family: "stranger", sans-serif;
+  .ano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22px;
+  }
+  .topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3{
+        font-size: 24px;
+    }
+  }
 }
 
 .hero {
@@ -46,14 +76,23 @@ header {
   }
 
   .esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h3{
-        font-size: 24px;
+        font-size: 27px;
         font-weight: 500;
-        letter-spacing: 4px;
+        letter-spacing: 10px;
+        font-family: "poppins", sans-serif;
+        
     }
     h1{
         font-size: 3.7vw;
         font-family: "stranger", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
   }
 
@@ -65,19 +104,6 @@ header {
         font-size: 2vw;
         margin-bottom: 32px;
         text-align: end;
-    }
-
-    button{
-        background-color: transparent;
-        color: white;
-        font-size: 16px;
-        display: flex;
-        gap: 12px;
-        border: none;
-        outline: none;
-        padding: 16px 0px;
-        border-bottom: 1px solid white;
-        cursor: pointer;
     }
   }
 }
